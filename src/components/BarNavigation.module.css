@@ -1,0 +1,10 @@
+.toolbar{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    font-weight: bold;
+    position: fixed !important;
+    height: 100px;
+    width: 100%;
+    background-color: #ff6b81;
+}

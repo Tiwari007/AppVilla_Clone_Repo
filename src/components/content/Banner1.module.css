@@ -1,0 +1,23 @@
+.section {
+    background-color: #ff6b81 !important;
+    height: auto;
+    padding-top: 100px
+}
+
+.container {
+    flex-direction: row;
+    display: flex
+}
+
+.leftSide {
+    width: 40%;
+    margin-top: 150px;
+    padding-left: 100px;
+    font-weight: bold;
+    color: white
+}
+
+.rightSide {
+    width: 40%;
+    margin-right: 300px
+}
