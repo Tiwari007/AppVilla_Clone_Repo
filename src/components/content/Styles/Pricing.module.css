@@ -1,12 +1,22 @@
 .section{
     background-color: #f9f9f9;
-     height: auto
+     /* height: auto */
 }
 
 .container{
     display:flex;
     flex-direction: column;
 }
+
+.pricingDetails{
+    text-align: center;
+    margin-top: 100px;
+    margin-right: 300px;
+    margin-left: 300px;
+    font-weight: bold;
+    color: black;
+}
+
 
 .heading{
     color:#ff6b81;
@@ -22,8 +32,12 @@
 }
 
 .card{
+    width: 1100px !important;
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content :center;
-    gap:20px
+    gap:22px;
+    margin-left: 200px;
+    margin-bottom: 100px;
 }

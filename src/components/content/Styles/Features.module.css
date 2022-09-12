@@ -1,0 +1,44 @@
+.section{
+    background-color: #f9f9f9;
+     height: auto;
+     
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+}
+
+.pricingDetails{
+    text-align: center;
+    margin-top: 100px;
+    margin-right: 300px;
+    margin-left: 300px;
+    font-weight: bold;
+    color: black;
+}
+
+.heading{
+    color:#ff6b81;
+}
+
+.title{
+    font-size: 48px;
+}
+
+.description{
+    color:#888888;
+    margin-bottom: 150px
+}
+
+.outerCard{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    max-width: 300px;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from './Banner4.module.css'
+import styles from './Styles/Banner4.module.css'
 import Box from "@mui/material/Box";
 import ActionButton from "../global/ActionButton";
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';

@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./Banner5.module.css";
+import styles from "./Styles/Banner5.module.css";
 import Box from "@mui/material/Box";
 
 const Banner5 = () => {
@@ -24,7 +24,32 @@ const Banner5 = () => {
           There are many variations of passages of Lorem Ipsum available, but
           the majority.
         </p>
-        <span>200</span><span>200</span><span>200</span>
+        <Box className={styles.overview}>
+            <div>
+              <h3>
+                <span>
+                  100%
+                </span>
+              </h3>
+              <p>satisfaction</p>
+            </div>
+            <div>
+              <h3>
+                <span>
+                200k
+                </span>
+              </h3>
+              <p>Happy Users</p>
+            </div>
+            <div>
+              <h3>
+                <span>
+                200k+
+                </span>
+              </h3>
+              <p>Downloads</p>
+            </div>
+        </Box>
       </Box>
     </Box>
   );

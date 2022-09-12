@@ -1,12 +1,12 @@
 import React from "react";
 
-import styles from './Banner1.module.css'
+import styles from './Styles/Home.module.css'
 import Box from "@mui/material/Box";
 import ActionButton from "../global/ActionButton";
 import ShopIcon from '@mui/icons-material/Shop';
 import AppleIcon from '@mui/icons-material/Apple';
 
-const Banner1 = () => {
+const Home = () => {
 
 // BANNer
   return (
@@ -19,11 +19,11 @@ const Banner1 = () => {
                 <ActionButton variant="outlined" color="primary" type="submit" text="Google Play" icon={<ShopIcon />} />
             </Box>
             <Box className={styles.rightSide}>
-                <img src="https://preview.uideck.com/items/appvilla/assets/images/hero/phone.png" alt="penguin" />
+                <img src="https://preview.uideck.com/items/appvilla/assets/images/hero/phone.png" alt="phone" />
             </Box>
         </Box>    
     </Box>
   );
 };
 
-export default Banner1;
+export default Home;

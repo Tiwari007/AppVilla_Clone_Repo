@@ -8,7 +8,7 @@ export default function PricingCardList({data}) {
 
   const {title, details, price, buttonText, includeInCourse} = data
   return (
-    <Card sx={{}}>
+    <Card>
         <CardContent>
           <Typography gutterBottom variant="h5">
             {title}
@@ -22,10 +22,10 @@ export default function PricingCardList({data}) {
           <ActionButton variant="contained" text={buttonText} />
           <hr/>
           {
-            includeInCourse.map((includes) => {
+            includeInCourse.map((includes, id) => {
                 return (
                     <>
-                        <p><CheckCircleOutlineIcon/> {includes}</p>
+                        <p key={id}><CheckCircleOutlineIcon/> {includes}</p>
                     </>
                 )
             })

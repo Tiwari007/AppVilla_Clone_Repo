@@ -1,14 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { NavLink } from "react-router-dom";
 
-import Typography from "@mui/material/Typography";
 import MenuItem from "@mui/material/MenuItem";
 
 const Navigation = ({ navlinks }) => {
   const NavBar = (() =>
     navlinks.map((page, id) => (
       <MenuItem key={id}>
-        <Typography>{page}</Typography>
+        <NavLink style={{textDecoration: "none"}} to={page.toLowerCase() == 'home' ? "/" : page.toLowerCase()}>{page}</NavLink> 
       </MenuItem>
     )))();
 
