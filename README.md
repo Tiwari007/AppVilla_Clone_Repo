@@ -16,16 +16,12 @@ You may also see any lint errors in the console.
 
 ## SCREENSHOTS
 
-![alt text](https://github.com/Tiwari007/AppVilla_Clone/blob/master/ScreenShots/AppVilla_SS_1.png?raw=true)
+### AppVilla Webpage in Light Mode
+
+![alt text](https://github.com/Tiwari007/AppVilla_Clone/blob/master/ScreenShots/AppVilla_Light_Mode.png?raw=true)
 
 
-![alt text](https://github.com/Tiwari007/AppVilla_Clone/blob/master/ScreenShots/AppVilla_SS_2.png?raw=true)
+### AppVilla Webpage in Dark Mode
 
+![alt text](https://github.com/Tiwari007/AppVilla_Clone/blob/master/ScreenShots/AppVilla_Dark_Mode.png?raw=true)
 
-![alt text](https://github.com/Tiwari007/AppVilla_Clone/blob/master/ScreenShots/AppVilla_SS_3.png?raw=true)
-
-
-![alt text](https://github.com/Tiwari007/AppVilla_Clone/blob/master/ScreenShots/AppVilla_SS_4.png?raw=true)
-
-
-![alt text](https://github.com/Tiwari007/AppVilla_Clone/blob/master/ScreenShots/AppVilla_SS_5.png?raw=true)
