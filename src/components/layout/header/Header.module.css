@@ -7,6 +7,7 @@
     height: 100px;
     width: 100%;
     background-color: #ff6b81;
+    z-index: 1;
 }
 
 .toolbar_dark{
@@ -18,4 +19,5 @@
     height: 100px;
     width: 100%;
     background-color: #000000;
+    z-index: 1;
 }
