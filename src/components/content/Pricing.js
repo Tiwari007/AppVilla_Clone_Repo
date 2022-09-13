@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 
+import PropTypes from 'prop-types';
+
 import { ThemeContext } from "../../contexts/theme";
 
 import styles from "./Styles/Pricing.module.css";
@@ -35,3 +37,8 @@ const Pricing = ({ pricingData }) => {
 };
 
 export default Pricing;
+
+
+Pricing.propTypes = {
+  pricingData: PropTypes.object
+}

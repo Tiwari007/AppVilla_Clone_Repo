@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 
+import PropTypes from 'prop-types';
+
 import { ThemeContext } from "../../contexts/theme";
 
 import styles from "./Styles/Features.module.css";
@@ -38,3 +40,9 @@ const Features = ({ cardContent }) => {
 };
 
 export default Features;
+
+
+Features.propTypes = {
+  cardContent : PropTypes.object
+}
+
