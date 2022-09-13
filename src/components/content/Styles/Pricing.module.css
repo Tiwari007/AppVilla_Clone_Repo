@@ -1,6 +1,15 @@
-.section{
+.section_light{
     background-color: #f9f9f9;
-     /* height: auto */
+     height: auto;
+     color: black;
+     
+}
+
+.section_dark{
+    background-color: #000000;
+     height: auto;
+     color: white;
+     
 }
 
 .container{
@@ -14,7 +23,6 @@
     margin-right: 300px;
     margin-left: 300px;
     font-weight: bold;
-    color: black;
 }
 
 

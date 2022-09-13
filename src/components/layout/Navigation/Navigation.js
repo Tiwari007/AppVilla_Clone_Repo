@@ -8,7 +8,7 @@ const Navigation = ({ navlinks }) => {
   const NavBar = (() =>
     navlinks.map((page, id) => (
       <MenuItem key={id}>
-        <NavLink style={{textDecoration: "none"}} to={page.toLowerCase() == 'home' ? "/" : page.toLowerCase()}>{page}</NavLink> 
+        <NavLink style={{textDecoration: "none"}} to={page.toLowerCase() === 'home' ? "/" : page.toLowerCase()}>{page}</NavLink> 
       </MenuItem>
     )))();
 

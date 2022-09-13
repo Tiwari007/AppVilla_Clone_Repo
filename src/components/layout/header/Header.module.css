@@ -1,10 +1,21 @@
-.toolbar{
+.toolbar_light{
     display: flex;
     justify-content: space-evenly;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     position: fixed !important;
     height: 100px;
     width: 100%;
     background-color: #ff6b81;
+}
+
+.toolbar_dark{
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold;
+    position: fixed !important;
+    height: 100px;
+    width: 100%;
+    background-color: #000000;
 }

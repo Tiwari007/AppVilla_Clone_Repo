@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+
+import { ThemeContext } from "../../contexts/theme";
 
 import styles from "./Styles/Pricing.module.css";
 import Box from "@mui/material/Box";
 import PricingCardList from "../global/PricingCardList";
 
 const Pricing = ({ pricingData }) => {
+
+  const {theme} = useContext(ThemeContext);
+  
   const pricingPlanDataHandler = (() => {
     return pricingData.map((data, id) => {
 
@@ -13,7 +18,7 @@ const Pricing = ({ pricingData }) => {
   })()
 
   return (
-    <Box className={styles.section}>
+    <Box className={theme === "light" ? styles.section_light : styles.section_dark}>
       <Box className={styles.container}>
         <Box className={styles.pricingDetails}>
           <p className={styles.heading}>PRICING</p>

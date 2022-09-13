@@ -1,7 +1,14 @@
-.section {
+.section_light {
     background-color: #ff6b81 !important;
     height: auto;
     padding-top: 100px
+}
+
+.section_dark {
+    background-color: #000000 !important;
+    height: auto;
+    padding-top: 100px;
+    color: white;
 }
 
 .container {

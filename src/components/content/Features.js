@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
+
+import { ThemeContext } from "../../contexts/theme";
 
 import styles from "./Styles/Features.module.css";
 import Box from "@mui/material/Box";
 import CardList from "../global/CardList";
 
 const Features = ({ cardContent }) => {
+
+  const { theme } = useContext(ThemeContext);
   return (
-    <Box id="featuresId" className={styles.section}>
+    <Box id="featuresId" className={theme === "light" ? styles.section_light : styles.section_dark}>
       <Box className={styles.container}>
         <Box className={styles.pricingDetails}>
           <p className={styles.heading}>FEATURES</p>

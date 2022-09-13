@@ -1,22 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
+
+import { ThemeContext } from "../../contexts/theme";
 
 import styles from "./Styles/Banner5.module.css";
 import Box from "@mui/material/Box";
 
 const Banner5 = () => {
+
+  const { theme } = useContext(ThemeContext);
+  
   return (
-    <Box className={styles.section}>
-      <Box
-        sx={{
-          textAlign: "center",
-          marginTop: "150px",
-          marginBottom: "150px",
-          marginRight: "300px",
-          marginLeft: "300px",
-          fontWeight: "bold",
-          color: "white",
-        }}
-      >
+    <Box className={theme === "light" ? styles.section_light : styles.section_dark}>
+      <Box className={styles.container}>
         <h1 className={styles.title}>
           Trusted by developers from over 80 planets
         </h1>

@@ -1,6 +1,7 @@
 import React from "react";
-
 import { Routes, Route } from "react-router-dom";
+
+import { ThemeProvider } from "../contexts/theme";
 
 import Layout from "./Layout";
 import Home from "./content/Home";
@@ -52,37 +53,57 @@ function App() {
         "It is a long established fact that a reader will be distracted by the readable content of a page at its layout.",
     },
   ];
-  
+
   const pricingData = [
     {
       title: "Hobby",
       details: "All the basics for starting a new business",
       price: "$12",
       buttonText: "Buy Hobby",
-      includeInCourse: ["Cras justo odio.", "Dapibus ac facilisis in.", "Morbi leo risus.", "Potenti felis, in cras ligula."]
+      includeInCourse: [
+        "Cras justo odio.",
+        "Dapibus ac facilisis in.",
+        "Morbi leo risus.",
+        "Potenti felis, in cras ligula.",
+      ],
     },
     {
       title: "Hobby",
       details: "All the basics for starting a new business",
       price: "$12",
       buttonText: "Buy Hobby",
-      includeInCourse: ["Cras justo odio.", "Dapibus ac facilisis in.", "Morbi leo risus.", "Potenti felis, in cras ligula."]
+      includeInCourse: [
+        "Cras justo odio.",
+        "Dapibus ac facilisis in.",
+        "Morbi leo risus.",
+        "Potenti felis, in cras ligula.",
+      ],
     },
     {
       title: "Hobby",
       details: "All the basics for starting a new business",
       price: "$12",
       buttonText: "Buy Hobby",
-      includeInCourse: ["Cras justo odio.", "Dapibus ac facilisis in.", "Morbi leo risus.", "Potenti felis, in cras ligula."]
+      includeInCourse: [
+        "Cras justo odio.",
+        "Dapibus ac facilisis in.",
+        "Morbi leo risus.",
+        "Potenti felis, in cras ligula.",
+      ],
     },
     {
       title: "Hobby",
       details: "All the basics for starting a new business",
       price: "$12",
       buttonText: "Buy Hobby",
-      includeInCourse: ["Cras justo odio.", "Dapibus ac facilisis in.", "Morbi leo risus.", "Potenti felis, in cras ligula."]
-    }
-  ]
+      includeInCourse: [
+        "Cras justo odio.",
+        "Dapibus ac facilisis in.",
+        "Morbi leo risus.",
+        "Potenti felis, in cras ligula.",
+      ],
+    },
+  ];
 
   const navlinks = [
     "Home",
@@ -96,17 +117,17 @@ function App() {
 
   return (
     <>
-      <Layout navlinks={navlinks}>
-        <Home />
-        <Features cardContent={cardContent} />
-        <Overview />
-        <Banner4 />
-        <Banner5 />
-        <Pricing pricingData={pricingData} />
-      </Layout>
+      <ThemeProvider>
+        <Layout id="layout" role="layout" navlinks={navlinks}>
+          <Home role="home" />
+          <Features cardContent={cardContent} />
+          <Overview />
+          <Banner4 />
+          <Banner5 />
+          <Pricing pricingData={pricingData} />
+        </Layout>
 
-
-      {/* <Routes>
+        {/* <Routes>
         <Route path="*" element={<PageNotFound />} />
         <Route path="/" element={<Home />} />
         <Route path="/features" element={<Features cardContent={cardContent} onClick={function(){
@@ -118,8 +139,7 @@ function App() {
         <Route path="/team" element={<Banner5 />} />
         <Route path="/blog" element={<Banner4 />} />
       </Routes> */}
-
-
+      </ThemeProvider>
     </>
   );
 }

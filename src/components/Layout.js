@@ -11,7 +11,7 @@ const Layout = (props) => {
     <>
     <Header navlinks={props.navlinks} />
       {props.children}
-    <Footer />
+    {/* <Footer /> */}
     </>
   )
 }
