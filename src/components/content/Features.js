@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 import { AppVillaContext } from "../../contexts/theme";
 
@@ -9,10 +9,12 @@ import Box from "@mui/material/Box";
 import CardList from "../global/CardList";
 
 const Features = ({ cardContent }) => {
-
   const { theme } = useContext(AppVillaContext);
   return (
-    <Box id="featuresId" className={theme === "light" ? styles.section_light : styles.section_dark}>
+    <Box
+      id="featuresId"
+      className={theme === "light" ? styles.section_light : styles.section_dark}
+    >
       <Box className={styles.container}>
         <Box className={styles.pricingDetails}>
           <p className={styles.heading}>FEATURES</p>
@@ -26,10 +28,10 @@ const Features = ({ cardContent }) => {
         </Box>
         <Box className={styles.outerCard}>
           {/* Create a method or create a new component */}
-          {cardContent.map((card, id) => {
+          {cardContent.slice(0, 4).map((card, id) => {
             return (
-              <Box className={styles.card}>
-                <CardList key={id} card={card} />
+              <Box key={id} className={styles.card}>
+                <CardList card={card} />
               </Box>
             );
           })}
@@ -39,10 +41,8 @@ const Features = ({ cardContent }) => {
   );
 };
 
-export default Features;
-
-
 Features.propTypes = {
-  cardContent : PropTypes.object
-}
+  cardContent: PropTypes.array,
+};
 
+export default Features;

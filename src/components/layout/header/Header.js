@@ -10,14 +10,15 @@ import Logo from "../logo/Logo";
 import Navigation from "../Navigation/Navigation";
 import ActionButton from "../../global/ActionButton";
 import LightDarkThemeButtonMUI from "../../LightDarkModeMUI_Button";
-
+import LogoutIcon from "@mui/icons-material/Logout";
 
 export default function Header({ navlinks }) {
-
-  const { setTheme, theme, setIsLogged } = useContext(AppVillaContext);
+  const { theme, setIsLogged } = useContext(AppVillaContext);
 
   return (
-    <Toolbar className={theme === "light" ? styles.toolbar_light : styles.toolbar_dark} >
+    <Toolbar
+      className={theme === "light" ? styles.toolbar_light : styles.toolbar_dark}
+    >
       <Logo />
       <Navigation navlinks={navlinks} />
       <ActionButton
@@ -26,11 +27,17 @@ export default function Header({ navlinks }) {
         type="submit"
         text="Get It Now"
       />
-      <ActionButton variant="contained"
-        color="secondary"
+      <ActionButton
+        variant="contained"
+        color="error"
         type="submit"
-        text="Logout" onClick={() => {setIsLogged(false)}} />
-      <ActionButton onClick={(e) => setTheme(theme === "light" ? "dark" : "light")} text={<LightDarkThemeButtonMUI />}></ActionButton>
+        icon={<LogoutIcon />}
+        text="Logout"
+        onClick={() => {
+          setIsLogged(false);
+        }}
+      />
+        <LightDarkThemeButtonMUI />
     </Toolbar>
   );
 }

@@ -44,8 +44,9 @@
     gap: 18px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .card{
-    max-width: 300px;
+    width: 300px;
 }

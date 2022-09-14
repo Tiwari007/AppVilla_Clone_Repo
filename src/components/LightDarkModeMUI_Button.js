@@ -1,6 +1,9 @@
-import * as React from 'react';
+import React, {useContext} from 'react';
+
+import { AppVillaContext } from '../contexts/theme';
 import { styled } from '@mui/material/styles';
 import Switch from '@mui/material/Switch';
+
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -46,7 +49,9 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 
 
 export default function LightDarkThemeButtonMUI() {
+
+  const {setTheme, theme} = useContext(AppVillaContext)
   return (
-      <MaterialUISwitch sx={{ m: 1 }} defaultChecked />
+      <MaterialUISwitch sx={{ m: 1 }} defaultChecked onClick={(e) => setTheme(theme === "light" ? "dark" : "light")}/>
   );
 }

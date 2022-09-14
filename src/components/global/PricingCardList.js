@@ -26,9 +26,9 @@ export default function PricingCardList({data}) {
           {
             includeInCourse.map((includes, id) => {
                 return (
-                    <>
-                        <p key={id}><CheckCircleOutlineIcon/> {includes}</p>
-                    </>
+                    <span key={id}>
+                        <p><CheckCircleOutlineIcon/> {includes}</p>
+                    </span>
                 )
             })
           }

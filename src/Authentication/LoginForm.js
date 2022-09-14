@@ -6,11 +6,8 @@ import { AppVillaContext } from "../contexts/theme";
 
 import App from "../components/App";
 
-const LoginForm = (props) => {
-
-    const { isLogged, setIsLogged } = useContext(AppVillaContext);
-
-    console.log(isLogged);
+const LoginForm = ({ data }) => {
+  const { isLogged, setIsLogged } = useContext(AppVillaContext);
 
   const [enteredEmail, setEnteredEmail] = useState("");
   const [enteredPassword, setenteredPassword] = useState("");
@@ -27,16 +24,13 @@ const LoginForm = (props) => {
   const loginSubmitHandler = (event) => {
     event.preventDefault();
 
-    const filteredData = props.data.filter((singleData) => {
-      return (
+    data.find(
+      (singleData) =>
         singleData.email === enteredEmail &&
         singleData.password === enteredPassword
-      );
-    });
-
-    {
-      filteredData.length > 0 ? setIsLogged(true) : setMessage("Login Failed");
-    }
+    )
+      ? setIsLogged(true)
+      : setMessage("Login Failed");
   };
 
   return (
@@ -44,7 +38,7 @@ const LoginForm = (props) => {
       {isLogged ? (
         <App />
       ) : (
-          <form onSubmit={loginSubmitHandler}>
+        <form onSubmit={loginSubmitHandler}>
           <div className={styles.container}>
             <header className={styles.header}>
               <div className={styles.Login}>
@@ -72,7 +66,7 @@ const LoginForm = (props) => {
               <p className={styles.message}>{message}</p>
             </header>
           </div>
-          </form>
+        </form>
       )}
     </>
   );

@@ -19,7 +19,7 @@
 
 .leftSide {
     width: 40%;
-    margin-top: 150px;
+    margin-top: 120px;
     padding-left: 100px;
     font-weight: bold;
     color: white
@@ -28,4 +28,13 @@
 .rightSide {
     width: 40%;
     margin-right: 300px
+}
+
+
+.heading{
+    font-size: 48px;
+}
+
+.button{
+    margin-top: 40px;
 }

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 import { AppVillaContext } from "../../contexts/theme";
 
@@ -9,18 +9,18 @@ import Box from "@mui/material/Box";
 import PricingCardList from "../global/PricingCardList";
 
 const Pricing = ({ pricingData }) => {
+  const { theme } = useContext(AppVillaContext);
 
-  const {theme} = useContext(AppVillaContext);
-  
   const pricingPlanDataHandler = (() => {
     return pricingData.map((data, id) => {
-
-      return <PricingCardList key ={id} data={data} />;
+      return <PricingCardList key={id} data={data} />;
     });
-  })()
+  })();
 
   return (
-    <Box className={theme === "light" ? styles.section_light : styles.section_dark}>
+    <Box
+      className={theme === "light" ? styles.section_light : styles.section_dark}
+    >
       <Box className={styles.container}>
         <Box className={styles.pricingDetails}>
           <p className={styles.heading}>PRICING</p>
@@ -29,8 +29,8 @@ const Pricing = ({ pricingData }) => {
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form.
           </p>
-          </Box>
-          <Box className={styles.card}>{pricingPlanDataHandler}</Box>
+        </Box>
+        <Box className={styles.card}>{pricingPlanDataHandler}</Box>
       </Box>
     </Box>
   );
@@ -38,7 +38,6 @@ const Pricing = ({ pricingData }) => {
 
 export default Pricing;
 
-
 Pricing.propTypes = {
-  pricingData: PropTypes.object
-}
+  pricingData: PropTypes.array,
+};

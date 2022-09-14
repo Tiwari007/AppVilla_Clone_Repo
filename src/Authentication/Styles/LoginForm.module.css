@@ -1,7 +1,6 @@
 .container {
   text-align: center;
-  background: #e4e2e2;
-  background: radial-gradient(to bottom left, #010101, #2556A4);
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
 }
 
 .header {
@@ -19,8 +18,20 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(19, 19, 19, 0.459);
+  border: 1px solid rgba(255, 255, 255, 0.459);
   padding: 50px;
+  background-color: #24243e;
+  color: wheat;
+  border-radius: 5px;
+}
+
+.Login input{
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.Login::placeholder{
+  color: white;
 }
 
 .Button {
