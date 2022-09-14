@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 
-import { ThemeContext } from "../../contexts/theme";
+import { AppVillaContext } from "../../contexts/theme";
 
 import styles from './Styles/Home.module.css'
 import Box from "@mui/material/Box";
@@ -10,7 +10,7 @@ import AppleIcon from '@mui/icons-material/Apple';
 
 const Home = () => {
 
-  const { theme } = useContext(ThemeContext)
+  const { theme } = useContext(AppVillaContext)
 
 
   return (

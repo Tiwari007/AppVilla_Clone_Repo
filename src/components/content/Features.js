@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 
 import PropTypes from 'prop-types';
 
-import { ThemeContext } from "../../contexts/theme";
+import { AppVillaContext } from "../../contexts/theme";
 
 import styles from "./Styles/Features.module.css";
 import Box from "@mui/material/Box";
@@ -10,7 +10,7 @@ import CardList from "../global/CardList";
 
 const Features = ({ cardContent }) => {
 
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useContext(AppVillaContext);
   return (
     <Box id="featuresId" className={theme === "light" ? styles.section_light : styles.section_dark}>
       <Box className={styles.container}>

@@ -5,9 +5,9 @@ import styles from './ActionButton.module.css'
 import { Button } from "@mui/material";
 
 
-function ActionButton({ color, type, text, variant, icon }) {
+function ActionButton({ color, type, text, variant, icon, onClick }) {
   return (
-      <Button className={styles.button} variant={variant} color={color} type={type}>
+      <Button className={styles.button} variant={variant} color={color} type={type} onClick={onClick}>
         {icon} {text}
       </Button>
   );

@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 
-import { ThemeContext } from "../../contexts/theme";
+import { AppVillaContext } from "../../contexts/theme";
 
 import styles from './Styles/Banner4.module.css'
 import Box from "@mui/material/Box";
@@ -9,7 +9,7 @@ import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 
 const Banner4 = () => {
 
-  const { theme } = useContext(ThemeContext)
+  const { theme } = useContext(AppVillaContext)
 
   return (
     <Box className={theme === "light" ? styles.section_light : styles.section_dark}>

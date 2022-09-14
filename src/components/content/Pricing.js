@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 
 import PropTypes from 'prop-types';
 
-import { ThemeContext } from "../../contexts/theme";
+import { AppVillaContext } from "../../contexts/theme";
 
 import styles from "./Styles/Pricing.module.css";
 import Box from "@mui/material/Box";
@@ -10,7 +10,7 @@ import PricingCardList from "../global/PricingCardList";
 
 const Pricing = ({ pricingData }) => {
 
-  const {theme} = useContext(ThemeContext);
+  const {theme} = useContext(AppVillaContext);
   
   const pricingPlanDataHandler = (() => {
     return pricingData.map((data, id) => {

@@ -1,12 +1,18 @@
 import { createContext, useState } from "react";
 
-const DEFAULT_THEME = "light";
+const content =
+{
+  defaultTheme:'light',
+  defaoultLoggedStatus:false
+}
 
-export const ThemeContext = createContext(DEFAULT_THEME);
+export const AppVillaContext = createContext(content);
 
-const { Provider } = ThemeContext;
+const { Provider } = AppVillaContext;
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState(DEFAULT_THEME);
-  return <Provider value={{ theme, setTheme }}>{children}</Provider>;
+  const [theme, setTheme] = useState(content.defaultTheme);
+  const [isLogged, setIsLogged] = useState(content.defaoultLoggedStatus);
+
+  return <Provider value={{ theme, setTheme,isLogged,setIsLogged }}>{children}</Provider>;
 };

@@ -1,13 +1,13 @@
 import React, { useContext } from "react";
 
-import { ThemeContext } from "../../contexts/theme";
+import { AppVillaContext } from "../../contexts/theme";
 
 import styles from "./Styles/Banner5.module.css";
 import Box from "@mui/material/Box";
 
 const Banner5 = () => {
 
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useContext(AppVillaContext);
   
   return (
     <Box className={theme === "light" ? styles.section_light : styles.section_dark}>

@@ -1,8 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import { ThemeProvider } from "../contexts/theme";
-
 import Layout from "./Layout";
 import Home from "./content/Home";
 import Features from "./content/Features";
@@ -117,7 +115,6 @@ function App() {
 
   return (
     <>
-      <ThemeProvider>
         <Layout id="layout" role="layout" navlinks={navlinks}>
           <Home role="home" />
           <Features cardContent={cardContent} />
@@ -127,7 +124,7 @@ function App() {
           <Pricing pricingData={pricingData} />
         </Layout>
 
-        {/* <Routes>
+        <Routes>
         <Route path="*" element={<PageNotFound />} />
         <Route path="/" element={<Home />} />
         <Route path="/features" element={<Features cardContent={cardContent} onClick={function(){
@@ -138,8 +135,7 @@ function App() {
         <Route path="/pricing" element={<Pricing pricingData={pricingData}/>} />
         <Route path="/team" element={<Banner5 />} />
         <Route path="/blog" element={<Banner4 />} />
-      </Routes> */}
-      </ThemeProvider>
+      </Routes>
     </>
   );
 }
