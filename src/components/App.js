@@ -6,9 +6,9 @@ import Home from "./content/Home";
 import Features from "./content/Features";
 import Overview from "./content/Overview";
 import Pricing from "./content/Pricing";
-import PageNotFound from "./PageNotFound";
-import Banner4 from "./content/Banner4";
-import Banner5 from "./content/Banner5";
+import PageNotFound from "./content/PageNotFound";
+import OverviewContent from "./content/OverviewContent";
+import Statistics from "./content/Statistics";
 import {
   cardContent,
   pricingData,
@@ -37,8 +37,8 @@ function App() {
         <Features cardContent={user} />
         {/* <Features cardContent={cardContent} /> */}
         <Overview />
-        <Banner4 />
-        <Banner5 />
+        <OverviewContent />
+        <Statistics />
         <Pricing pricingData={pricingData} />
       </Layout>
 
@@ -61,8 +61,8 @@ function App() {
           path="/pricing"
           element={<Pricing pricingData={pricingData} />}
         />
-        <Route path="/team" element={<Banner5 />} />
-        <Route path="/blog" element={<Banner4 />} />
+        <Route path="/team" element={<Statistics />} />
+        <Route path="/blog" element={<OverviewContent />} />
       </Routes>
     </>
   );

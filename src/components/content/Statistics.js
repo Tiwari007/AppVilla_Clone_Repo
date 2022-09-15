@@ -2,10 +2,10 @@ import React, { useContext } from "react";
 
 import { AppVillaContext } from "../../contexts/theme";
 
-import styles from "./Styles/Banner5.module.css";
+import styles from "./Styles/Statistics.module.css";
 import Box from "@mui/material/Box";
 
-const Banner5 = () => {
+const Statistics = () => {
   const { theme } = useContext(AppVillaContext);
 
   return (
@@ -45,4 +45,4 @@ const Banner5 = () => {
   );
 };
 
-export default Banner5;
+export default Statistics;

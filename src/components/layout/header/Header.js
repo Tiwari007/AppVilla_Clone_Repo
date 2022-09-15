@@ -9,7 +9,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Logo from "../logo/Logo";
 import Navigation from "../Navigation/Navigation";
 import ActionButton from "../../global/ActionButton";
-import LightDarkThemeButtonMUI from "../../LightDarkModeMUI_Button";
+import LightDarkThemeButtonMUI from "../../content/LightDarkModeMUI_Button";
 import LogoutIcon from "@mui/icons-material/Logout";
 
 export default function Header({ navlinks }) {

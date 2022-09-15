@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 
 const content = {
   defaultTheme: "light",
-  defaultLoggedStatus: true,
+  defaultLoggedStatus: false,
 };
 
 export const AppVillaContext = createContext(content);

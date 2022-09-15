@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 
-import { AppVillaContext } from '../contexts/theme';
+import { AppVillaContext } from '../../contexts/theme';
 import { styled } from '@mui/material/styles';
 import Switch from '@mui/material/Switch';
 

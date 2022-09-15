@@ -2,12 +2,12 @@ import React, { useContext } from "react";
 
 import { AppVillaContext } from "../../contexts/theme";
 
-import styles from "./Styles/Banner4.module.css";
+import styles from "./Styles/OverviewContent.module.css";
 import Box from "@mui/material/Box";
 import ActionButton from "../global/ActionButton";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 
-const Banner4 = () => {
+const OverviewContent = () => {
   const { theme } = useContext(AppVillaContext);
 
   return (
@@ -49,4 +49,4 @@ const Banner4 = () => {
   );
 };
 
-export default Banner4;
+export default OverviewContent;

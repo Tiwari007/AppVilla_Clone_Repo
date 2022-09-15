@@ -1,10 +1,11 @@
 import React, { useState, useContext } from "react";
 import styles from "./Styles/LoginForm.module.css";
 import { Button, TextField } from "@mui/material";
+import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
 
-import { AppVillaContext } from "../contexts/theme";
+import { AppVillaContext } from "../../contexts/theme";
 
-import App from "../components/App";
+import App from "../../components/App";
 
 const LoginForm = ({ data }) => {
   const { isLogged, setIsLogged } = useContext(AppVillaContext);
@@ -42,6 +43,7 @@ const LoginForm = ({ data }) => {
           <div className={styles.container}>
             <header className={styles.header}>
               <div className={styles.Login}>
+              <AssignmentIndIcon className={styles.user}/>
                 <TextField
                   onChange={emailHandler}
                   variant="standard"

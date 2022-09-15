@@ -30,10 +30,6 @@
   border-bottom: 2px solid white;
 }
 
-.Login::placeholder{
-  color: white;
-}
-
 .Button {
   padding: 50px;
 }
@@ -41,4 +37,15 @@
 .message {
   background-color: black;
   color: red;
+}
+
+.user{
+  height: 50px !important;
+  width: 50px !important;
+  margin-bottom: 30px;
+  color: blueviolet;
+}
+
+.user:hover{
+  color:#03035a
 }
