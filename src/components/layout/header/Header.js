@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useContext } from "react";
+import PropTypes from "prop-types";
 import { AppVillaContext } from "../../../contexts/theme";
 
 import styles from "./Header.module.css";
@@ -41,3 +42,12 @@ export default function Header({ navlinks }) {
     </Toolbar>
   );
 }
+
+
+Header.defaultProps = {
+  navlinks: ["Home", "Features", "Overview", "Pricing", "Team"],
+};
+
+Header.propTypes = {
+  navlinks: PropTypes.array.isRequired,
+};

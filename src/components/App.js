@@ -40,6 +40,8 @@ function App() {
         <Pricing pricingData={pricingData} />
       </Layout>
 
+
+      {/* ROUTES */}
       <Routes>
         <Route path="*" element={<PageNotFound />} />
         <Route path="/" element={<Home />} />

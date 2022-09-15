@@ -1,6 +1,6 @@
 import React from "react";
 
-import Footer from "./layout/footer/Footer";
+// import Footer from "./layout/footer/Footer";
 import Header from "./layout/header/Header";
 
 const Layout = (props) => {

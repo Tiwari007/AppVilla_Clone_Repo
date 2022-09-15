@@ -12,9 +12,9 @@ const Authentication = () => {
     },
     {
       id: "e2",
-      name: "Vikram",
-      email: "Vikram@gmail.com",
-      password: "Vikram",
+      name: "Bucky",
+      email: "Bucky@gmail.com",
+      password: "Bucky",
     },
   ];
 
