@@ -22,9 +22,7 @@ function App() {
     const response = await fetch("https://jsonplaceholder.typicode.com/users");
     const data = await response.json();
     setUser(data);
-    console.log(data);
   };
-
 
   useEffect(() => {
     fetchData();

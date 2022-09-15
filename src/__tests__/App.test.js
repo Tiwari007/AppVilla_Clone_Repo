@@ -1,5 +1,6 @@
-import { render, screen } from '@testing-library/react';
-import App from '../components/App';
+import { render, screen } from "@testing-library/react";
+import App from "../components/App";
+import Home from "../components/content/Home";
 
 // test('renders learn react link', () => {
 //   render(<App />);
@@ -7,18 +8,12 @@ import App from '../components/App';
 //   expect(linkElement).toBeInTheDocument();
 // });
 
-test.todo('renders learn react link');
+test.todo("renders learn react link");
 
 describe("<App /> Component", () => {
   xit("Should have a Layout component", () => {
-      render(<App />);
-      const layoutComponent = screen.getByRole("layout");
-      expect(layoutComponent).toBeInTheDocument();
-  })
-
-  xit("Should have a Home component", () => {
     render(<App />);
-    const homeComponent = screen.getByRole("home");
-    expect(homeComponent).toBeInTheDocument();
-})
-})
+    const layoutComponent = screen.getByRole("layout");
+    expect(layoutComponent).toBeInTheDocument();
+  });
+});

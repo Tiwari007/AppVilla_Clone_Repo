@@ -21,7 +21,7 @@ const Features = ({ cardContent }) => {
           <h1 className={styles.title}>
             Your Experience Gets Better And Better Over Time.
           </h1>
-          <p className={styles.description}>
+          <p role="description" className={styles.description}>
             There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration in some form.
           </p>
