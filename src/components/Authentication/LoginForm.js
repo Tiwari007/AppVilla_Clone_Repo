@@ -43,6 +43,7 @@ const LoginForm = ({ data }) => {
           <div className={styles.container}>
             <header className={styles.header}>
               <div className={styles.Login}>
+                <p style={{marginBottom: "20px"}}>Hint<sup>*</sup>:  Admin(Both)</p>
               <AssignmentIndIcon className={styles.user}/>
                 <TextField
                   onChange={emailHandler}

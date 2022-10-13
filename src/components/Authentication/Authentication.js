@@ -16,6 +16,12 @@ const Authentication = () => {
       email: "Bucky@gmail.com",
       password: "Bucky",
     },
+    {
+      id: "e3",
+      name: "Admin",
+      email: "Admin",
+      password: "Admin",
+    }
   ];
 
   return <LoginForm data={Users} />;
